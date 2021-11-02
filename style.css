@@ -1,0 +1,663 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: gray;
+}
+
+.dexName {
+  font-family: 'Press Start 2P', cursive;
+  width: 200px;
+  color: yellow;
+  margin: 40px auto 40px auto;
+}
+
+/********************************
+ Left Main Display 
+********************************/
+
+.leftDisplay {
+  margin-bottom: 20px;
+  width: 480px;
+  background-color: red;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+/********************************
+ Left Top Display 
+********************************/
+
+.leftHeader {
+  border-top-left-radius: 30px;
+  background-color: firebrick;
+  position: relative;
+  height: 85px;
+}
+
+.leftHeaderNotifiers {
+  position: absolute;
+  display: flex;
+  margin: 15px 0 15px 15px;
+  width: 150px;
+  height: 70px;
+}
+
+.leftHeaderRadiusContainers {
+  display: flex;
+  height: 120px;
+}
+
+.leftHeader1 {
+  background-color: firebrick;
+  margin-top: 76px;
+  width: 232px;
+  height: 35px;
+  border-bottom-right-radius: 110px;
+}
+
+.leftHeader2 {
+  margin-top: 70px;
+  left: 225px;
+  position: absolute;
+  width: 272px;
+  height: 35px;
+  background-color: red;
+  border-top-left-radius: 100px;
+}
+
+.bigNotifier {
+  width: 63px;
+  height: 63px;
+  border: 1px solid black;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px black;
+  margin-right: 5px;
+}
+
+.innerNotifierRadius {
+  border: 1px solid;
+  box-shadow: 1px 1px 1px black;
+  background: radial-gradient(turquoise, darkturquoise);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-top: 5px;
+  left: 9%;
+  position: relative; /* makes left effective */
+  animation-name: light;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-play-state: paused;
+  animation-delay: 1.5s;
+}
+
+.reflect {
+  position: absolute;
+  z-index: 120;
+  margin: 4px auto auto 15px;
+  width: 27px;
+  height: 15px;
+  right: 10px;
+  background-color: #a5f1ff;
+  border-radius: 20px 15px;
+}
+
+@keyframes light {
+  50% {
+    background-color: rgb(10, 191, 252);
+    box-shadow: 2px -5px 200px rgb(0, 153, 255);
+  }
+}
+
+.yellowNotifier {
+  border: 1px solid black;
+  box-shadow: 2px 2px 3px black;
+  background-color: rgb(192, 192, 1);
+  margin-right: 3px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  animation-name: light_yellow;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+  animation-play-state: paused;
+}
+
+@keyframes light_yellow {
+  50% {
+    background-color: rgb(217, 255, 0);
+    box-shadow: 2px -5px 20px yellow;
+  }
+}
+
+.redNotifier {
+  border: 1px solid black;
+  background-color: rgb(223, 2, 2);
+  box-shadow: 2px 2px 3px black;
+  margin-right: 3px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  animation-name: light_red;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-delay: 0.5s;
+  animation-play-state: paused;
+}
+
+@keyframes light_red {
+  50% {
+    background-color: red;
+    box-shadow: 2px 5px 20px rgb(255, 108, 108);
+  }
+}
+
+.greenNotifier {
+  border: 1px solid black;
+  box-shadow: 2px 2px 3px black;
+  background-color: green;
+
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  animation-name: light_green;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+  animation-play-state: paused;
+}
+
+@keyframes light_green {
+  50% {
+    background-color: rgb(9, 255, 0);
+    box-shadow: 2px 5px 20px rgb(123, 253, 1);
+  }
+}
+
+/********************************
+ Left Middle Display 
+********************************/
+
+.leftMiddleDisplay {
+  border-radius: 15px;
+  width: 330px;
+  height: 245px;
+  padding: 15px;
+  margin: 70px auto 10px auto;
+  background-color: lightgray;
+}
+
+.leftInnerDisplay {
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 270px;
+  height: 155px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+#display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#display img {
+  height: 150px;
+}
+
+#btn {
+  margin-top: 15px;
+  margin-left: 10%;
+}
+
+.redFlickers {
+  display: flex;
+  justify-content: center;
+}
+
+.smallRedFlickers {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-bottom: 6px;
+  margin-left: 4px;
+  background-color: red;
+  border: 1px solid black;
+}
+
+.redButtonDisplay {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.speakerOutput {
+  float: right;
+  margin-top: 22px;
+  margin-right: 32px;
+  display: flex;
+}
+
+.speakerOutputBars {
+  width: 30px;
+  height: 4px;
+  margin: 2px 2px;
+  background-color: rgb(49, 45, 45);
+}
+
+#triangle {
+  position: absolute;
+  left: 195px;
+  bottom: 345px;
+  z-index: 120;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 0 0 50px;
+  border-color: transparent transparent transparent red;
+}
+
+/********************************
+ Left Bottom Display 
+********************************/
+
+.leftDisplayBottomButtons {
+  display: flex;
+}
+
+.bigBlueDot {
+  width: 60px;
+  height: 60px;
+  background-color: blue;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 12px 24px 5px 88px;
+}
+
+.greenBtnTopOfId {
+  width: 50px;
+  height: 10px;
+  border-radius: 20px;
+  border: 1px solid whitesmoke;
+  background-color: #0cc9d6;
+  margin: 20px 5px 0 12px;
+}
+
+.orangeBtnTopOfId {
+  width: 50px;
+  height: 10px;
+  border-radius: 20px;
+  border: 1px solid whitesmoke;
+  background-color: rgb(57, 54, 199);
+  margin: 20px 0 0 0;
+}
+
+.controls {
+  display: flex;
+  border: 2px solid black;
+  background-color: gray;
+  border-radius: 100%;
+  padding: 2px;
+  margin: 12px 10px 0 40px;
+}
+
+.leftControl {
+  background-color: #000000;
+  width: 25px;
+  height: 20px;
+  margin: 21px 0 0 0;
+  border-bottom-left-radius: 7px;
+  border-top-left-radius: 7px;
+}
+
+.leftControl i {
+  color: #25c06b;
+  display: flex;
+  margin-left: 4px;
+  font-size: 16px;
+  margin-top: 2px;
+}
+
+.rightControl {
+  background-color: #000000;
+  width: 25px;
+  height: 20px;
+  margin: 21px 0 0 0;
+  border-bottom-right-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.rightControl i {
+  color: #25c06b;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 4px;
+  font-size: 16px;
+  margin-top: 2px;
+}
+
+.upControl {
+  background-color: black;
+  width: 20px;
+  height: 65px;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.fa-chevron-up {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  color: #25c06b;
+}
+
+.fa-chevron-down {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  font-size: 16px;
+  color: #25c06b;
+}
+
+.idDisplayOuter {
+  box-shadow: inset -20px -20px 40px #114227, inset 20px 20px 40px #21804d;
+  border-radius: 15px;
+  padding: 12px;
+  height: 70px;
+  width: 110px;
+  margin-bottom: 15px;
+  background-color: #19613a;
+}
+
+.idDisplayInner {
+  background-color: ghostwhite;
+  border-radius: 10%;
+  height: 45px;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.pokemonID {
+  display: flex;
+  justify-content: center;
+}
+
+/********************************
+ Middle Display 
+********************************/
+
+.middlePillar {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  z-index: 150;
+  width: 80px;
+  background: linear-gradient(to right, rgb(66, 6, 6), red, rgb(116, 14, 14));
+  box-shadow: 0px 5px 5px 3px darken(red, 20%);
+}
+
+.hinge1 {
+  border: 1px solid black;
+  position: absolute;
+  z-index: 20;
+  width: 80px;
+  height: 70px;
+  background: linear-gradient(to right, rgb(116, 14, 14), red, rgb(94, 13, 13));
+  border-bottom: solid rgb(192, 1, 1, 2px);
+  border-top: solid rgb(192, 1, 1, 2px);
+}
+
+.hinge2 {
+  border: 1px solid black;
+  position: absolute;
+  z-index: 20;
+  width: 80px;
+  height: 70px;
+  background: linear-gradient(to right, rgb(116, 14, 14), red, rgb(94, 13, 13));
+  border-bottom: solid rgb(192, 1, 1, 2px);
+  border-top: solid rgb(192, 1, 1, 2px);
+  margin-top: 270px;
+}
+
+.hinge3 {
+  border: 1px solid black;
+  position: absolute;
+  z-index: 20;
+  width: 80px;
+  height: 70px;
+  background: linear-gradient(to right, rgb(116, 14, 14), red, rgb(94, 13, 13));
+  border-bottom: solid rgb(192, 1, 1, 2px);
+  border-top: solid rgb(192, 1, 1, 2px);
+  margin-top: 510px;
+}
+
+/********************************
+ Right Main Display 
+********************************/
+
+.rightDisplay {
+  margin-bottom: 20px;
+  background-color: red;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+/********************************
+ Right Top Display 
+********************************/
+
+.rightTopContainer {
+  display: flex;
+  height: 85px;
+  background-color: gray;
+}
+
+/* leftHeader2 */
+.curved1 {
+  position: absolute;
+  height: 35px;
+  width: 252px;
+  background-color: red;
+  border: 1px black solid;
+  border-top-right-radius: 100px;
+  margin-top: 68px;
+  border-bottom: none;
+  border-left: none;
+}
+/* leftHeader1 */
+.curved2 {
+  position: relative;
+  height: 30px;
+  width: 232px;
+  background-color: gray;
+  border-bottom: black solid 1px;
+  border-left: black solid 1px;
+  border-bottom-left-radius: 110px;
+  top: 68px;
+  right: 0px;
+  margin-top: 15px;
+  margin-left: 245px;
+}
+
+/********************************
+   Right Middle Display 
+  ********************************/
+.progressData {
+  display: flex;
+}
+
+.rightDisplayTopDiv {
+  justify-content: space-around;
+  font-size: 20px;
+  color: cyan;
+  text-shadow: 0 0 0 #000000, 1px 1px 0 #000000, 2px -1px 0 #000000, 2px 0 0 #000000;
+}
+
+.pokemonDetails {
+  margin: 65px auto 20px auto;
+  border: 2px solid black;
+  height: 40%;
+  width: 70%;
+  color: black;
+  background-color: lightgray;
+}
+
+.pokemonDetails h1 {
+  color: #d0f8ff;
+  text-shadow: 0 0 5px black, 0 0 10px #a5f1ff, 0 0 20px #a5f1ff, 0 0 30px #a5f1ff,
+    0 0 40px black;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+}
+
+/********************************
+   Right Bottom Display 
+  ********************************/
+
+.rightDisplayNotifiers {
+  margin: 5px 40px 20px 80px;
+}
+
+.rightBottomBtnBlueNotifier {
+  margin-right: 5px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: darkcyan;
+  border: 1px solid black;
+}
+
+.rightBottomBtnYellowNotifier {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: rgb(100, 207, 39);
+  border: 1px solid black;
+}
+
+.rightBottomBtnGreen {
+  margin-left: 170px;
+  width: 50px;
+  height: 10px;
+  border-radius: 20px;
+  border: 1px solid whitesmoke;
+  background-color: #25c06b;
+}
+
+.rightBottomBtnOrange {
+  margin-left: 5px;
+  width: 50px;
+  height: 10px;
+  border-radius: 20px;
+  border: 1px solid whitesmoke;
+  background-color: darkorange;
+}
+
+.playButtons {
+  margin-left: 80px;
+}
+
+.leftMove {
+  border: 2px solid black;
+  background-color: gray;
+  width: 40px;
+  height: 35px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.leftMove i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6px;
+  color: #25c06b;
+  font-size: 20px;
+}
+
+.rightMove {
+  border: 2px solid black;
+  background-color: gray;
+  width: 40px;
+  height: 35px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.rightMove i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6px;
+  color: #25c06b;
+  font-size: 20px;
+}
+
+.skipLeft {
+  margin-left: 180px;
+  background-color: rgb(69, 248, 15);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid greenyellow;
+}
+
+.skipLeft i {
+  font-size: 26px;
+  margin-left: -2px;
+}
+
+.typeDisplayersContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightBottomTypeDisplayers {
+  margin: 30px 4px 35px 4px;
+  box-shadow: inset -20px -20px 40px #125785, inset 20px 20px 40px #0ccdf0;
+  width: 120px;
+  height: 45px;
+  background-color: rgb(2, 120, 255);
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+.uppercaseType {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffffff;
+  font-family: 'Reggae One', cursive;
+}
+
+#typeOfPokemon {
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+}
