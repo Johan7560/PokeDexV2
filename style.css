@@ -258,18 +258,6 @@ body {
   background-color: rgb(49, 45, 45);
 }
 
-#triangle {
-  position: absolute;
-  left: 195px;
-  bottom: 345px;
-  z-index: 120;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 50px 0 0 50px;
-  border-color: transparent transparent transparent red;
-}
-
 /********************************
  Left Bottom Display 
 ********************************/
